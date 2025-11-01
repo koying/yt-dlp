@@ -28,7 +28,7 @@ def to_signed_32(n):
 
 
 class _ByteGenerator:
-def __init__(self, algo_id, seed):
+    def __init__(self, algo_id, seed):
         try:
             self._algorithm = getattr(self, f'_algo{algo_id}')
         except AttributeError:
